@@ -1,9 +1,10 @@
-service: sls-go # NOTE: update this with your service name=
+service: sls-go 
 
 provider:
   name: aws
   runtime: go1.x
   versionFunctions: true
+  logRetentionInDays: 30
 
 package:
   individually: true
